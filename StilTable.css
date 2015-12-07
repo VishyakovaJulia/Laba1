@@ -1,0 +1,71 @@
+body {
+	background: url(back1.jpg);
+}
+
+b,h3{
+	color: yellow;
+	font-weight:500;
+	text-decoration: none;
+}
+div{
+	margin: 2 auto;
+	margin-top:2%;
+    margin-bottom:2%;
+	margin-left:2%;
+    width: 95%;
+}
+td{
+  font-family:arial, monospace;
+  font-style:italic;
+  height: 50px;
+  padding: 0 10px;
+  box-shadow: 0px 1px 0px darkgreen;
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
+}
+option{
+	color: purple;
+	text-align: left;
+	 box-shadow: 1px 1px 1px yellow;
+}
+a:link{
+  font-family:arial, monospace;
+  text-decoration: none;
+  color: #FACC2E;
+  margin-left:60%;
+}
+table{
+  font-family:arial, monospace;
+  width: 95%;
+  margin: 0 auto;
+  border-spacing: 1px;
+  border: 1px;
+  color: yellow;
+  margin-top:2%;
+  margin-bottom:2%;
+}
+select,input[type=text] {
+  font-family:arial, monospace;
+  padding: 0 10px;
+  box-shadow: 1px 1px 1px green;
+  text-align: left;
+  vertical-align: middle;
+  color: purple;
+}
+input[type=number] {
+	color: purple;
+}
+a:hover{
+  text-decoration: underline;
+}
+input[type=button]  {
+  font-family:arial, monospace;
+  font-style: italic;
+  padding:2px 7px; 
+  background:#FACC2E; 
+  margin-left:60%;
+  border:1 none; 
+  cursor: url('cur.png');
+  color: purple;
+}

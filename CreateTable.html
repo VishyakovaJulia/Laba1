@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta charset="utf-8"/>
+		<title>Control</title>
+		<script src="WorkThisData.js"></script>
+		<link rel="stylesheet" type="text/css" href="StilTable.css">
+	</head>
+	<body onload="workWithXML()">
+
+	<div id="Par" >
+		<p>
+		<h3 align="center">Add parameter</h3>
+		<b>Add Name :</b><input type="text"  id="newName">
+		<b>Add Type :</b><select size="1" id="newType" onchange='changeFieldType(this)'>
+    	<option value="System.String">String</option>
+		<option value="System.Boolean">Boolean</option>
+    	<option value="System.Int32">Int32</option>
+   		</select>
+		<b>Add Value :</b><input type="text" maxlength="6"  id="newValue" >	
+		<b>Add Description :</b><input type="text"  id="newDescription">
+		</p>
+		<p>
+   		<input type="button" align="right" value=" Add parameter" onclick="addRow()">
+		</p>
+		</div>
+		<h3 align="center">Parameters table</h3>
+		<table id="Info" align="center">
+			<tr>
+			<td><b>Name</b></td>
+			<td><b>Value</b></td>
+			<td><b>Description</b></td>
+			<td><b>Del Row</b></td>
+			</tr>
+		</table>
+		<input type="button" value=" Write parameters to XML file " onclick="createXML( 'output.xml', 'text/plain')">
+		<a href="" style="display:none" id="download_link">output.xml</a>
+		
+	</body>
+</html>
